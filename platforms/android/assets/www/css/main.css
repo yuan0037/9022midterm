@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #71DDFF;
+    font-family: Calibri, Arial;
+}
+body{
+    height: 100%;
+}
+h2,
+h3,
+p {
+    padding: 0.2rem 2rem;
+}
+
+li {
+    font-size:  3rem;
+}
+
+[data-role=overlay]{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.82);
+}
+
+ @media only screen and (min-width : 320px) and (orientation: portrait) {
+    [data-role=modal]{
+      position:fixed;
+      top:20%;
+      left:10%;
+      width: 80%;
+      z-index:15;
+      max-height:80%;
+      padding:5vh;
+      border:1px solid #333;
+      min-height:10%;
+      color:#fff;
+      background-color:#666;
+      box-shadow:1px 1px 2px rgb(0,0,0);
+      font-size: 1.5rem;
+    }
+}
+
+    @media only screen and (min-width : 320px) and (orientation: landscape) {
+        [data-role=modal]{
+          position:fixed;
+          top:20%;
+          left:10%;
+          width: 70%;
+          z-index:15;
+          max-height:80%;
+          padding:5%;
+          border:1px solid #333;
+          min-height:10%;
+          color:#fff;
+          background-color:#666;
+          box-shadow:1px 1px 2px rgb(0,0,0);
+          font-size: 1.5rem;
+        }
+    }
+
+
+
+[data-role=page].active {
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #71DDFF;
+    border-top: 1px solid #666;
+}
+[data-role=page].show {
+    display: block;
+}
+[data-role=page].hidden {
+    display: none;
+}
+
+#wrapper{
+  width:100%;
+  height:100%;
+}
+
+#map{
+    text-align: center;
+    vertical-align: center;
+    margin: 0.5rem;
+    width:90%;
+    height:90%;
+    align: center;
+/*    position: relative;*/
+}
+
+#theMap{
+    text-align: center;
+    vertical-align: center;
+    margin: 0.5rem;
+    width:100%;
+    height:100%;
+} 
+
+#backbtn{
+    font-size: 2rem;
+}
